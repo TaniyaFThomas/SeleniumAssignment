@@ -20,7 +20,7 @@ public class ChromeTest1 {
 						 "--disable-dev-shm-usage"));
 			
 			driver.get("https://www.gmail.com/");
-			System.out.println("Title of the page:"+ driver.getTitle());
+			System.out.println("Title of the gmail:"+ driver.getTitle());
 			driver.quit();
 			
 		}
