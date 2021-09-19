@@ -4,8 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="docker.Setup_DockerGrid"/>
-      <!--<class name="docker.ChromeTest1"/>
-      <class name="docker.ChromeTest3"/> -->
+      <class name="docker.ChromeTest1"/>
+      <class name="docker.ChromeTest3"/>
       <class name="docker.ChromeTest2"/> 
       <class name="docker.FirefoxTest1"/>
       </classes>
