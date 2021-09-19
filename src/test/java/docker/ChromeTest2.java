@@ -11,7 +11,7 @@ public class ChromeTest2 {
 	public void test2() throws MalformedURLException {
 		RemoteWebDriver driver = new RemoteWebDriver(
 				 new URL("http://localhost:4444/wd/hub"),
-				 new FirefoxOptions().ChromeOptions("--no-sandbox",
+				 new ChromeOptions().ChromeOptions("--no-sandbox",
 						 "start-maximized",
 						 "disable-infobars",
 						 "--disable-extensions",
