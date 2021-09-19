@@ -11,7 +11,7 @@ public class Setup_DockerGrid {
 	@BeforeTest
 	void startDockerGrid() throws IOException, InterruptedException {
 		Runtime.getRuntime().exec("cmd /c start start_dockergrid.bat");
-		Thread.sleep(60000);
+		Thread.sleep(120000);
 	}
 	
 	@AfterTest
