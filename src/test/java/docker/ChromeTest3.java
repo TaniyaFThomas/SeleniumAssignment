@@ -12,7 +12,11 @@ public class ChromeTest3 {
 	public void test3() throws MalformedURLException {
 		RemoteWebDriver driver = new RemoteWebDriver(
 				 new URL("http://localhost:4444/wd/hub"),
-				 new ChromeOptions());
+				 new ChromeOptions().addArguments("--no-sandbox",
+						 "start-maximized",
+						 "disable-infobars",
+						 "--disable-extensions",
+						 "--disable-dev-shm-usage"));
 		
 		driver.get("https://www.flipkart.com/");
 		System.out.println("Title of the page:"+ driver.getTitle());
