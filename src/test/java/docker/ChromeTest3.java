@@ -19,7 +19,7 @@ public class ChromeTest3 {
 						 "--disable-dev-shm-usage"));
 		
 		driver.get("https://www.flipkart.com/");
-		System.out.println("Title of the page:"+ driver.getTitle());
+		System.out.println("Title of flipkart:"+ driver.getTitle());
 		driver.quit();
 		
 	}
