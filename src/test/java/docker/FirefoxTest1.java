@@ -15,7 +15,7 @@ public class FirefoxTest1 {
 				 new FirefoxOptions());
 		
 		driver.get("https://www.yahoo.com/");
-		System.out.println("Title of the page:"+ driver.getTitle());
+		System.out.println("Title of yahoo:"+ driver.getTitle());
 		driver.quit();
 		
 	}
