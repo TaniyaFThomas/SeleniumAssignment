@@ -18,7 +18,7 @@ public class ChromeTest2 {
 						 "--disable-dev-shm-usage"));
 		
 		driver.get("https://www.google.com/");
-		System.out.println("Title of the page:"+ driver.getTitle());
+		System.out.println("Title of google:"+ driver.getTitle());
 		driver.quit();
 		
 	}
