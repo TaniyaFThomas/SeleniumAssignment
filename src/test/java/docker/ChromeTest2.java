@@ -17,8 +17,14 @@ public class ChromeTest2 {
 						 "--disable-extensions",
 						 "--disable-dev-shm-usage"));
 		
-		driver.get("https://www.google.com/");
-		System.out.println("Title of google:"+ driver.getTitle());
+		//driver.get("https://www.google.com/");
+		//System.out.println("Title of google:"+ driver.getTitle());
+		driver.get("https://github.com/login");
+		System.out.println("Title of the page:"+ driver.getTitle());
+		driver.findElement(By.id("login_field")).sendKeys("taniya.f.thomas94@gmail.com");
+		driver.findElement(By.id("password")).sendKeys("TanTan@123");
+		driver.findElement(By.name("commit")).click();
+		System.out.println("Title of the page:"+ driver.getTitle());
 		driver.quit();
 		
 	}
