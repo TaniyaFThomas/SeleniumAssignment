@@ -21,6 +21,7 @@ public class ChromeTest1 {
 			
 			driver.get("https://www.gmail.com/");
 			System.out.println("Title of gmail:"+ driver.getTitle());
+			assertEquals("Gmail", driver.getTitle());
 			driver.quit();
 			
 		}
