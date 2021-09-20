@@ -6,6 +6,7 @@ import java.net.URL;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
+import org.testng.Assert;
 
 public class ChromeTest3 {
 	@Test
@@ -20,7 +21,7 @@ public class ChromeTest3 {
 		
 		driver.get("https://www.flipkart.com/");
 		System.out.println("Title of flipkart:"+ driver.getTitle());
-		assertEquals("Amazon", driver.getTitle(), "Title of flipkart page incorrect");
+		Assert.assertEquals("Amazon", driver.getTitle(), "Title of flipkart page incorrect");
 		driver.quit();
 		
 	}
