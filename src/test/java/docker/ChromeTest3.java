@@ -20,6 +20,7 @@ public class ChromeTest3 {
 		
 		driver.get("https://www.flipkart.com/");
 		System.out.println("Title of flipkart:"+ driver.getTitle());
+		assertEquals("Amazon", driver.getTitle(), "Title of flipkart page incorrect");
 		driver.quit();
 		
 	}
